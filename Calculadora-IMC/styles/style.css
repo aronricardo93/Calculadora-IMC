@@ -1,7 +1,55 @@
 body{
-    background-color:lavender;
+    background-image: url(../assets/back2.jpg); 
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 h1{
     text-align: center;
+ }
+
+form,label{
+    text-align: center;
+    color: black;
+} 
+
+form{
+    background-color: snow;
+    border-radius: 10px;
+    margin: 300px 600px 250px 50px;
+    padding: 50px;
+    opacity: 90%;
+}
+
+.sexo{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 80px;
+    padding: 47px;
+    cursor: pointer;
+    
+}
+
+input{
+    padding: 3px;
+    height: 10px;
+    width: 80px;
+    margin: 20px 0 0 10px;
+}
+
+h4{
+    text-align: left;
+}
+
+.idade{
+    display: flex;
+}
+
+.altura{
+    display: flex;
+}
+
+.peso{
+    display: flex;
 }
