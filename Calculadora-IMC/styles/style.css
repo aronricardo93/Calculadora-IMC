@@ -53,3 +53,17 @@ h4{
 .peso{
     display: flex;
 }
+
+button{
+    display: inline-block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: seagreen;
+    width: 110px;
+    color: white;
+    opacity: 75%;
+    border: darkorange;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px;    
+}
