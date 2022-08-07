@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="br-pt">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Calculadora de IMC</title>
-</head>
-<body>
-    <h1>Calculadora - Índice de Massa Corporal</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Calculadora de IMC</title>
+    </head>
+    <body>
+        <h1>Calculadora - Índice de Massa Corporal</h1>
         <form>
-            <label>Selecione o seu sexo:</label>
-            <div class="sexo">
-                <img src="./assets/mulher.png" alt="mulher">
-                <img src="./assets/homem.png" alt="homem">
-            </div>
+            <h3>Selecione o seu sexo:</h3>
+            
+            <img class="mulher" src="./assets/mulher.png" alt="mulher">
+            <img class="homem" src="./assets/homem.png" alt="homem">
+            
             <hr >
             <div class="idade">
                 <h4>Digite a sua idade: </h4>
-                    <input type="number" placeholder="ex.: 21">
+                <input type="number" placeholder="ex.: 21">
             </div>
             <div class="altura">
                 <h4>Digite a sua altura: </h4>
-                    <input type="number" placeholder="ex.: 1,70">
+                <input type="text" placeholder="ex.: 1.70">
             </div>
             <div class="peso">
                 <h4>Digite o seu peso: </h4>
-                <input type="number" placeholder="ex.: 69,2">
+                <input type="text" placeholder="ex.: 69.2">
             </div>
-
-            <div class="btn-send">
-                <button type="submit">Calcular</button>
-            </div>
-
-            <div class="btn-reset">
-                <button type="button">Limpar</button>
-            </div>
+            
+            <p></p>
+            <button id="calcular" type="button" onclick="calcularIMC()">Calcular</button>
+            <button id="limpar" type="button">Limpar</button>
         </form>
-</body>
-</html>
+            <script src="script/script.js"></script>
+        </body>
+        </html>

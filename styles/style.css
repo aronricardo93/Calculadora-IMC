@@ -1,5 +1,5 @@
 body{
-    background-image: url(../assets/back2.jpg); 
+    background-image: url(../assets/background.jpg); 
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -16,19 +16,23 @@ form,label{
 form{
     background-color: snow;
     border-radius: 10px;
-    margin: 300px 600px 250px 50px;
-    padding: 50px;
+    margin: 60px 60px 0 50%;
+    padding: 20px;
     opacity: 90%;
+    width: 30%;
 }
 
-.sexo{
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    width: 80px;
-    padding: 47px;
+img{
     cursor: pointer;
-    
+    padding: 10px;
+}
+
+.mulher:hover{
+    border: 2px solid rgb(255, 108, 132);
+}
+
+.homem:hover{
+    border: 2px solid blue;
 }
 
 input{
@@ -55,15 +59,20 @@ h4{
 }
 
 button{
-    display: inline-block;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: seagreen;
+    background-color: rgb(61, 61, 61);
     width: 110px;
     color: white;
     opacity: 75%;
-    border: darkorange;
     padding: 10px;
     font-size: 14px;
-    border-radius: 10px;    
+    border-radius: 10px; 
+    cursor: pointer;  
+    transition: 300ms; 
+}
+
+button:hover{
+    background-color: black;
+    
 }
