@@ -16,39 +16,43 @@
             </nav>
         </header>
 
-        <form>
-            <h3>Selecione o seu sexo:</h3>
-            
-            <section >
-                <input class="form-check-input" type="radio" name="sexo" value="feminino" checked><img class="feminino" src="./assets/mulher.png" alt="feminino">
-                <input class="form-check-input" type="radio" name="sexo" value="masculino"><img class="masculino" src="./assets/homem.png" alt="masculino">         
-            </section>
-            
+        <main>
+            <form>
+                <h3>Selecione o seu sexo:</h3>
+                
+                    <div class="sexo-feminino">
+                        <input class="form-check-input" type="radio" name="sexo" value="feminino" checked><img class="feminino" src="./assets/mulher.png" alt="feminino"></label>
+                    </div>
+                    <div class="sexo-masculino">
+                        <input class="form-check-input" type="radio" name="sexo" value="masculino"><img class="masculino" src="./assets/homem.png" alt="masculino">         
+                    </div>             
 
-            <hr >
-            <section class="dados">
-                <div class="idade">
-                    <label>Digite a sua idade:</label>
-                    <input type="number" placeholder="ex.: 21" required>
-                </div>
-                <div class="altura">
-                    <label>Digite a sua altura: </label>
-                    <input name="altura" type="number" placeholder="ex.: 1.70" required>
-                </div>
-                <div class="peso">
-                    <label>Digite o seu peso:</label>
-                    <input name="peso" type="number" placeholder="ex.: 69.2" required>
-                </div>
-            </section>
-            
-            <p></p>
-            <button id="calcular" type="button" onclick="calcularIMC()">Calcular</button>
-            <button id="limpar" type="reset">Limpar</button>
-        </form>
-            <script src="script/script.js"></script>
+                <hr >
+                <section class="dados">
+                    <div class="idade">
+                        <label>Digite a sua idade:</label>
+                        <input type="number" placeholder="ex.: 21" required>
+                    </div>
+                    <div class="altura">
+                        <label>Digite a sua altura: </label>
+                        <input name="altura" type="number" placeholder="ex.: 1.70" required>
+                    </div>
+                    <div class="peso">
+                        <label>Digite o seu peso:</label>
+                        <input name="peso" type="number" placeholder="ex.: 69.2" required>
+                    </div>
+                </section>
+                
+                <p></p>
+                <button id="calcular" class="btn btn-primary btn-lg" type="button" onclick="calcularIMC()">Calcular</button>
+                <button class="btn btn-primary btn-lg" type="reset">Limpar</button>
+            </form>
+        </main>
 
-            <footer>
-                <p class="copyright">&copy; Copyright Calculado IMC - 2022 - Desenvolvido por <a target="_blank" href="https://www.linkedin.com/in/aronricardo/">Aron Ricardo</a></p>
-            </footer>
+        <footer>
+            <p class="copyright">&copy; Copyright Calculado IMC - 2022 - Desenvolvido por <a target="_blank" href="https://www.linkedin.com/in/aronricardo/">Aron Ricardo</a></p>
+        </footer>
+
+        <script src="script/script.js"></script>
         </body>
         </html>

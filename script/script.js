@@ -31,6 +31,4 @@ function calcularIMC(){
             document.querySelector('p').innerHTML = `<strong>O seu IMC é: ${calculo.toFixed(2)} (Obesidade Mórbida)</strong>`
         }
     }
-
-
 }
